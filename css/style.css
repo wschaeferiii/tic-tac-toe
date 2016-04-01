@@ -1,0 +1,18 @@
+body {
+  font-size: 20px;
+
+}
+
+#gameboard {
+  padding-top: 50px;
+  width: 31.2em;
+  height: 31.2em;
+  margin: 0 auto;
+}
+
+.cell {
+  border: red solid 1px;
+  width: 10em;
+  height: 10em;
+  display: inline-block;
+}

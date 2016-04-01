@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
-  console.log("loaded");
+  var $gameCells = $('.cell');
+
+  $($gameCells).one('click', function() {
+    console.log("board clicked!!");
+    console.log(this.id);
+
+
+  })
 
 });
+
