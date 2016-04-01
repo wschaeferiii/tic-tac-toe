@@ -1,12 +1,14 @@
 $(document).ready(function() {
 
+  var moves = ['', '', '', '', '', '', '', '', '']
+  var counter = 0;
+
   var $gameCells = $('.cell');
 
   $($gameCells).one('click', function() {
-    console.log("board clicked!!");
-    console.log(this.id);
-
-
+    counter++;
+    moves[this.id] = (counter % 2) ? 'x' : 'o';
+    console.log(moves, counter);
   })
 
 });
