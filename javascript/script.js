@@ -7,9 +7,10 @@ $(document).ready(function() {
 
   $($gameCells).one('click', function() {
     counter++;
+    var cellNumber = this.id;
     moves[this.id] = (counter % 2) ? 'x' : 'o';
     console.log(moves, counter);
+    $(this).append(moves[this.id]);
   })
-
 });
 
