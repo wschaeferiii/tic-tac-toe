@@ -1,6 +1,11 @@
 body {
   font-size: 20px;
-  min-width: 500px;
+  max-width: 500px;
+
+}
+
+p {
+  text-align: center;
 }
 
 #gameboard {
@@ -8,12 +13,13 @@ body {
   width: 31.2em;
   height: 31.2em;
   margin: 0 auto;
-  max-width: 50em;
+  max-width: 320px;
+  max-height: 320px;
 }
 
 .cell {
   border: red solid 1px;
-  width: 10em;
-  height: 10em;
+  width: 100px;
+  height: 100px;
   display: inline-block;
 }
