@@ -1,5 +1,11 @@
 body {
   font-size: 20px;
+  background-color: black;
+}
+
+.innerdiv {
+
+  text-align: center;
 }
 
 .top {
@@ -25,14 +31,19 @@ body {
   margin: 0 auto;
   max-width: 320px;
   max-height: 320px;
+  color: white;
 }
 
 .cell {
+  font-size: 45px;
   overflow: hidden;
-  border: red solid 1px;
+  border: white solid 1px;
   width: 100px;
   height: 100px;
   display: inline-block;
   text-align: center;
   margin: auto;
+  color:white;
+  display: table-cell;
+  vertical-align: middle;
 }

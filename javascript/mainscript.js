@@ -30,6 +30,7 @@ var ticTacToe = (function () {
       moves[moveIndex] = currentPlayer;
       $cell.html(currentPlayer);
       counter++
+      switchPlayer();
   }
   //test combo
    var testWinner = function() {
@@ -68,8 +69,6 @@ var ticTacToe = (function () {
     var moveIndex = $cell.attr("id");
     if (isValidMove(moveIndex)) {
       makeMove($cell, moveIndex);
-      console.log(moves);
-      switchPlayer();
       testWinner();
     }
   }
