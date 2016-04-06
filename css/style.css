@@ -5,9 +5,15 @@ body {
 
 p {
   text-align: center;
+  padding: 25px;
+}
+
+.button {
+  display: hidden;
 }
 
 #gameboard {
+  display: fixed;
   padding-top: 50px;
   width: 31.2em;
   height: 31.2em;
