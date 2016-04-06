@@ -1,19 +1,24 @@
 body {
   font-size: 20px;
-  max-width: 500px;
 }
 
-p {
+.top {
   text-align: center;
-  padding: 25px;
+  width: 100%;
+  padding-bottom: 25px;
 }
 
-.button {
-  display: hidden;
+.container {
+  margin: 0 auto;
+}
+
+
+#new-game {
+  display: none;
+  margin: auto;
 }
 
 #gameboard {
-  display: fixed;
   padding-top: 50px;
   width: 31.2em;
   height: 31.2em;
@@ -23,8 +28,11 @@ p {
 }
 
 .cell {
+  overflow: hidden;
   border: red solid 1px;
   width: 100px;
   height: 100px;
   display: inline-block;
+  text-align: center;
+  margin: auto;
 }

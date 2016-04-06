@@ -45,7 +45,7 @@ var ticTacToe = (function () {
         return false;
       }
     });
-    //test draw
+    //test draw & allow reset
     if (win !== 0) {
       return reset();
     } else if (counter === 10) {
@@ -60,7 +60,7 @@ var ticTacToe = (function () {
   var reset = function() {
     $("#gameboard").off("click");
     $("button").css("display", "block").on("click", function() {
-
+      location.reload();
     });
   }
   //game "controller"
@@ -70,6 +70,7 @@ var ticTacToe = (function () {
       makeMove($cell, moveIndex);
       console.log(moves);
       switchPlayer();
+      testWinner();
     }
   }
   //helper function that tests moves-array to winning combos
@@ -79,16 +80,28 @@ var ticTacToe = (function () {
       (moves[indexes[0]] !== 0);
   };
 
-  return { playGame: playGame, testWinner: testWinner};
+  return { playGame: playGame};
 
 })();
 
 $(document).ready(function() {
   $("#gameboard").on("click", ".cell", function() {
     ticTacToe.playGame($(this));
-    ticTacToe.testWinner();
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
